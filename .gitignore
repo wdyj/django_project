@@ -1,4 +1,3 @@
 *.pyc
 /boozaapp/dashboard/static/
 /boozaapp/boozaapp/settings.py
-# test
