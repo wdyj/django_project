@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% comment %} <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> {% endcomment %}
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'dashboard/css/bootstrap.min.css' %}">
+  <title>{% block test_title %}Summary Home{% endblock %}</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        BoozaApp
+      </div>
+      <div class="col">
+        Summary
+      </div>
+      <div class="col">
+        거장들의투자공식
+      </div>
+      <div class="col">
+        핫스탁코리아
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col">
+          오늘의 현황
+    </div>
+    <div class="col">
+          매출 현황
+    </div>
+  </div>
+
+  {% block scripts %}
+  <script src="{% static 'dashboard/js/bootstrap.min.js' %}"></script>
+  {% endblock %}
+</body>
+</html>
+  

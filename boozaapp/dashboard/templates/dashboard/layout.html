@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% comment %} <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> {% endcomment %}
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'dashboard/css/bootstrap.css' %}">
+  <title>{% block test_title %}Summary Home{% endblock %}</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="{% static 'dashboard/img/booza_eng.png' %}" width="300" heigt="30">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav" style="width:100%">
+      <li class="nav-item active" style="width:25% ; text-align:center">
+        <a class="nav-link" href="#">Summary <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" style="width:25%; text-align:center">
+        <a class="nav-link" href="#">거장들의투자공식</a>
+      </li>
+      <li class="nav-item" style="width:25%; text-align:center">
+        <a class="nav-link" href="#">핫스탁코리아</a>
+      </li>
+      <li class="nav-item" style="width:25%; text-align:center">
+        <a class="nav-link disabled" href="#">부자앱</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
+
+{% comment %} <div>
+  <div style="width: 20%; text-align: center; background-color: #123456;">
+    위대
+  </div>
+</div> {% endcomment %}
+
+  {% block scripts %}
+  <script src="{% static 'dashboard/js/bootstrap.min.js' %}"></script>
+  {% endblock %}
+</body>
+</html>
+  
